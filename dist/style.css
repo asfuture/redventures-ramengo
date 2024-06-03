@@ -1,0 +1,156 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background: goldenrod;
+    /*background-image: url(./assets/parede2.jpg);
+    background-repeat: no-repeat, repeat-x;
+    background-position: center;
+    background-size: auto;
+    opacity: 0.5;
+    */
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.apresentacao {
+    max-width: 625px;
+    margin: auto;
+    padding: 10px 10px 30px 10px;
+    text-align: center;
+    background: white;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    box-shadow: 0px 0px 12px 7px;
+}
+.container {
+    max-width: 27%;
+    height: 230px;
+    margin: 35px auto;
+    padding: 25px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    text-align: center;
+    background: white;
+    box-shadow: 0px 0px 12px 7px;
+}
+.container select {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 11px 0px 11px 0px;
+    cursor: pointer;
+    text-align: center;
+}
+.container select:hover {
+    border: 2px solid black;
+}
+.container option {
+    width: 80%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.container button {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 15%;
+    background: darkgreen;
+    cursor: pointer;
+}
+button:hover {
+    border: 2px solid black;
+}
+label {
+    width: 100%;
+    color: rgb(40, 39, 39);
+    border: none;
+    padding: 10px 20px;
+}
+#message {
+    margin-top: 20px;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    background: goldenrod;
+   
+}
+img {
+    max-width: 35%;
+    max-height: 250px;
+    margin: 8px;
+}
+
+.bodyModal {
+    width: 65%;
+    border: 1px solid #888;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px green;
+    margin: 8% auto;
+    background: #288f282b;
+}
+.close {
+    color: red;
+    float: right;
+    font-size: 49px;
+    font-weight: bold;
+    padding: 5px;
+    position: relative;
+    top: 4px;
+    left: -13px;
+    z-index: 3;
+}
+.close:hover,  .close:focus {
+    color: rgb(121, 31, 31);
+    cursor: pointer;
+}
+
+/* Mobile*/
+@media (min-width:500px) and (max-width: 700px) {
+    .bodyModal {
+        width: 50%;
+    }
+    .bodyModal {
+        margin: 15% auto;
+    }
+}
+@media (min-width:300px) and (max-width: 499px) {
+    .apresentacao {
+        max-width: 500px;
+        margin: 35px 12px 0px 12px;
+    }
+    .container {
+        max-width: 70%;
+    }
+    .bodyModal {
+        margin: 25% auto;
+        width: 85%;
+    }
+    img {
+        max-width: 80%;
+        margin: 25px;
+    }
+    .close {
+        color: red;
+        float: right;
+        font-size: 49px;
+        font-weight: bold;
+        position: relative;
+        left: 4px;
+        top: -17px;
+    }
+}

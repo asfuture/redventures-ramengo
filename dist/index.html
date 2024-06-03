@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RamenGo</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <h1>RamenGo</h1> 
+    <div class="apresentacao">
+        <p>Bem-vindo ao RamenGO! Estamos prontos para atendê-lo.</p>
+        <P>Por favor, faça o seu pedido e desfrute de uma deliciosa experiência gastronômica conosco.</p>
+    </div>
+    <div class="container">
+        <label for="">Escolha o seu tipo de caldo:</label><br>
+        <select name="broths" id="broths">
+            <option selected value="selecione">selecione</option>
+        </select>
+        <br><br>
+        <label for="">Escolha o seu tipo de proteina:</label><br>
+        <select name="proteins" id="proteins">
+            <option selected value="selecione">selecione</option>
+        </select><br>
+        <button onclick="pedido()"> Fazer Pedido</button>
+    </div>
+
+    <div id="pedidoModal" class="modal" >
+        <div class="bodyModal">
+            <span class="close">&times;</span>
+            <p>O seu pedido foi realizado com sucesso!</p>
+            <p id="numeroPedido"></p>
+            <p id="description"></p>
+            <img src="" id="img" alt="">
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
